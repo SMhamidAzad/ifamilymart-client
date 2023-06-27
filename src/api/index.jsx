@@ -1,7 +1,7 @@
 import axios from "axios";
 
 const fetcher = axios.create({
-  baseURL: "http://localhost:8000",
+  baseURL: "https://ifamilymart-client.onrender.com",
 });
 
 export default fetcher;

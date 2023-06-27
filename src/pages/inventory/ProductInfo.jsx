@@ -17,6 +17,7 @@ function ProductInfo() {
             window.location.reload()
         })()
     }
+    console.log(products)
     return (
         <div>
             <h2 className="mb-10 text-2xl px-9 py-4 bg-white font-serif">Add Product</h2>
@@ -27,6 +28,7 @@ function ProductInfo() {
                         {/* head */}
                         <thead>
                             <tr className="text-lg">
+                                <th>SL. No</th>
                                 <th>Brand Name</th>
                                 <th>Group</th>
                                 <th>Unit</th>
@@ -44,6 +46,7 @@ function ProductInfo() {
                                     <td>{product?.group}</td>
                                     <td>{product?.unit}</td>
                                     <td>{product?.productCode}</td>
+                                    <td>{product?.quantity}</td>
                                     <td>{product?.price}</td>
                                     <td>
                                         <MdDelete onClick={() => handleDeleteProduct(product?._id)} className='cursor-pointer text-red-400 text-2xl ' />

@@ -58,13 +58,12 @@ function BrandAndGroup() {
             <h2 className="text-2xl px-9 py-4 bg-white font-serif">Brand Name, Product Group & Category</h2>
             <div>
                 <div className="grid grid-cols-3 mx-20">
-                    <div className="overflow-x-auto h-2/4 mx-6 mt-10 bg-white">
+                    <div className="overflow-x-auto h-2/4 px-4 mx-6 mt-10 bg-white">
                         <label
                             htmlFor="my_modal_1"
                             className="btn btn-outline rounded-none  btn-info my-10 ml-5"
                             onClick={() => window.my_modal_1.showModal()}
                         >Add Brand</label>
-                        {/* <button  onClick={() => window.my_modal_1.showModal()} class="btn btn-outline rounded-none  btn-info my-10 ml-5">Add Brand</button> */}
                         <table className="table table-pin-rows">
                             <thead className="">
                                 <tr className="text-lg">
@@ -83,7 +82,7 @@ function BrandAndGroup() {
                             </tbody>
                         </table>
                     </div>
-                    <div className="overflow-x-auto h-2/4 mx-6 mt-10 bg-white">
+                    <div className="overflow-x-auto h-2/4 px-4 mx-6 mt-10 bg-white">
                         <label
                             htmlFor="my_modal_2"
                             className="btn btn-outline rounded-none  btn-info my-10 ml-5"
@@ -108,7 +107,7 @@ function BrandAndGroup() {
                             </tbody>
                         </table>
                     </div>
-                    <div className="overflow-x-auto h-2/4 mx-6 mt-10 bg-white">
+                    <div className="overflow-x-auto h-2/4 px-4 mx-6 mt-10 bg-white">
                         <label
                             htmlFor="my_modal_3"
                             className="btn btn-outline rounded-none  btn-info my-10 ml-5"
