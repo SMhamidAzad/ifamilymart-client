@@ -8,7 +8,7 @@ function ModalSize() {
     console.log(data)
     const result = await fetcher.post("/api/size", data)
     console.log(result)
-    // window("Brand added successfully")
+    window.alert("Size added successfully")
   }
   return (
     <div className=''>

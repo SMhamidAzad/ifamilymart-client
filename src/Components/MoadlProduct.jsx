@@ -7,7 +7,7 @@ function ModalProduct() {
   const onSubmit = async (data) => {
     console.log(data)
     const result = await fetcher.post("/api/product", data)
-    window.alert("Brand added successfully");
+    window.alert("Product added successfully");
   }
   return (
     <div className=''>

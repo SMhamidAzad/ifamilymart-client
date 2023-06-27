@@ -7,8 +7,7 @@ function ModalInfo() {
   const onSubmit = async (data) => {
     console.log(data)
     const result = await fetcher.post("/api/modal", data)
-    console.log(result)
-    // window("Brand added successfully")
+    window.alert("Modal added successfully")
   }
   return (
     <div className=''>

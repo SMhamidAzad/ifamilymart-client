@@ -7,7 +7,7 @@ function ModalUpdate({modalId}) {
   const onSubmit = async (data) => {
     const result = await fetcher.put(`/api/modal/update/${modalId}`, data)
     console.log(result)
-    // window("Brand added successfully")
+    window.alert("Modal updated successfully")
   }
   return (
     <div className=''>

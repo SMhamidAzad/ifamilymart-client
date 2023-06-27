@@ -7,8 +7,7 @@ function ModalUpdateSize({modalsizeId}) {
   const { register, handleSubmit, reset } = useForm();
   const onSubmit = async (data) => {
     const result = await fetcher.put(`/api/size/${modalsizeId}`, data)
-    console.log(result)
-    // window("Brand added successfully")
+    window.alert("Size updated successfully")
   }
   return (
     <div className=''>

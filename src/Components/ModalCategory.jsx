@@ -8,8 +8,7 @@ function ModalCategory() {
   const onSubmit = async (data) => {
     console.log(data)
     const result = await fetcher.post("/api/category", data)
-    console.log(result)
-    // window("Brand added successfully")
+    window.alert("Category added successfully")
   }
   useEffect(() => {
     (async () => {
