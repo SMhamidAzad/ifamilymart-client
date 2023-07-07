@@ -15,6 +15,7 @@ function BrandAndGroup() {
             setAllBrand(result?.data?.result)
         })();
     }, []);
+    
     useEffect(() => {
         (async () => {
             const result = await fetcher.get("api/product/all")
@@ -62,7 +63,12 @@ function BrandAndGroup() {
                         <label
                             htmlFor="my_modal_1"
                             className="btn btn-outline rounded-none  btn-info my-10 ml-5"
-                            onClick={() => window.my_modal_1.showModal()}
+                            // onClick={() => window.my_modal_1.showModal()}
+                            onClick={async () => {
+                                window.my_modal_1.showModal();
+                                const result = await fetcher.get("api/brand/all");
+                                setAllBrand(result?.data?.result);
+                              }}
                         >Add Brand</label>
                         <table className="table table-pin-rows">
                             <thead className="">
@@ -86,7 +92,12 @@ function BrandAndGroup() {
                         <label
                             htmlFor="my_modal_2"
                             className="btn btn-outline rounded-none  btn-info my-10 ml-5"
-                            onClick={() => window.my_modal_2.showModal()}
+                            // onClick={() => window.my_modal_2.showModal()}
+                            onClick={async () => {
+                                window.my_modal_2.showModal();
+                                const result = await fetcher.get("api/product/all");
+                                setAllProduct(result?.data?.result);
+                              }}
                         >Add Product Group</label>
                         <table className="table table-pin-rows">
                             <thead className="">
@@ -111,7 +122,12 @@ function BrandAndGroup() {
                         <label
                             htmlFor="my_modal_3"
                             className="btn btn-outline rounded-none  btn-info my-10 ml-5"
-                            onClick={() => window.my_modal_3.showModal()}
+                            // onClick={() => window.my_modal_3.showModal()}
+                            onClick={async () => {
+                                window.my_modal_3.showModal();
+                                const result = await fetcher.get("api/category/all");
+                                setAllCategory(result?.data?.result);
+                              }}
                         >Add Category</label>
                         <table className="table table-pin-rows">
                             <thead className="">
